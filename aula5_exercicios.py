@@ -36,3 +36,22 @@ if valor %2 == 0:
 else:
     print("O número é ímpar")
 print("valor")
+
+'''7. Cálculo de Frete com Base no Peso
+Declare uma variável peso com o peso de um pacote em kg. Calcule o frete com base nas seguintes regras:
+
+- Peso até 5 kg: R$ 10.00;
+- Peso entre 5 kg e 10 kg: R$ 20.00;
+= Peso acima de 10 kg: R$ 30.00;
+
+Imprima o valor do frete.'''
+
+#Resolução:
+peso = 8
+if peso <= 5:
+    frete = 10.0
+elif peso <= 10:
+    frete = 20.0
+else:
+    frete = 30.0
+print("Valor do frete:", frete)
