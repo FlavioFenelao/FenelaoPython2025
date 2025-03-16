@@ -31,3 +31,11 @@ print(f"Números pares de 1 até {numero}:")
 for i in range(1, numero + 1):   
     if i % 2 == 0:  # Verificar se o número é par 
         print(i)
+        
+numero = int(input("Insira um número inteiro não negativo: "))
+fatorial = 1
+contador = 1
+while contador <= numero:  
+    fatorial *= contador 
+    contador += 1 
+print(f"O fatorial de {numero} é: {fatorial}")
