@@ -23,3 +23,17 @@ for i in range(numero, -1, -1):
     numero = int(input("Digite um número para a tabuada"))
     for i in range(1, 11):
         print(f"{numero} x {i} = {numero*i}")
+
+ #  4.Cálculo de Média de Notas: Peça ao usuário que insira 4 notas (de 0 a 10). 
+Calcule a média das notas e exiba o resultado. 
+Se a média for maior ou igual a 7, exiba "Aprovado". Caso contrário, exiba "Reprovado".
+nota1 = float(input("Insira a primeira nota (0 a 10): "))
+nota2 = float(input("Insira a segunda nota (0 a 10): "))
+nota3 = float(input("Insira a terceira nota (0 a 10): "))
+nota4 = float(input("Insira a quarta nota (0 a 10): "))
+media = (nota1 + nota2 + nota3 + nota4) / 4
+print(f"A média das notas é: {media:.2f}")
+if media >= 7: 
+    print("Aprovado") 
+else:
+    print("Reprovado")
