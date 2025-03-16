@@ -37,3 +37,12 @@ if media >= 7:
     print("Aprovado") 
 else:
     print("Reprovado")
+     
+# 5. dos Números Pares em um Intervalo: Peça ao usuário dois números, representando o início e o fim de um intervalo. Use um loop (for ou while) para calcular a soma de todos os números pares nesse intervalo e exiba o resultado.
+inicio = int(input("Insira o número inicial do intervalo: "))
+fim = int(input("Insira o número final do intervalo: "))
+soma_pares = 0
+for numero in range(inicio, fim + 1):
+    if numero % 2 == 0: 
+      soma_pares += numero
+print(f"A soma dos números pares no intervalo de {inicio} a {fim} é: {soma_pares}")
