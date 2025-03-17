@@ -55,3 +55,12 @@ elif peso <= 10:
 else:
     frete = 30.0
 print("Valor do frete:", frete)
+
+peso = float(input("Digite o peso: "))
+if peso <= 5:
+    frete = 10.0
+elif peso <= 10:
+    frete = 20.0
+else:
+    frete = 30.0
+print("Valor do frete:", frete)
