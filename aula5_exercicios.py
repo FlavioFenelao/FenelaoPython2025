@@ -8,7 +8,7 @@ altura = 1.75
 imc = peso /(altura **2)
 print(imc)
 
-Resolução alternativa
+#Resolução alternativa
 peso = float(input("Digite o peso: "))
 altura = float(input("Digite a altura: "))
 imc = peso /(altura **2)
@@ -63,7 +63,7 @@ else:
     frete = 30.0
 print("Valor do frete:", frete)
 
-Resolução alternativa
+#Resolução alternativa
 peso = float(input("Digite o peso: "))
 if peso <= 5:
     frete = 10.0
