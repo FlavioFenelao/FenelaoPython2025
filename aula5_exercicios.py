@@ -8,6 +8,13 @@ altura = 1.75
 imc = peso /(altura **2)
 print(imc)
 
+Resolução alternativa
+peso = float(input("Digite o peso: "))
+altura = float(input("Digite a altura: "))
+imc = peso /(altura **2)
+print(imc)
+
+
 idade = 22
 tempo_experiencia = True
 
