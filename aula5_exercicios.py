@@ -63,6 +63,7 @@ else:
     frete = 30.0
 print("Valor do frete:", frete)
 
+Resolução alternativa
 peso = float(input("Digite o peso: "))
 if peso <= 5:
     frete = 10.0
