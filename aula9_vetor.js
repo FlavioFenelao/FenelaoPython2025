@@ -61,16 +61,24 @@ console.log("Número de elementos:", numeros.length);
 // Atividades:
 
 // 1: Crie uma função que recebe um array de números e retorna a soma de todos os elementos.
+function somaLista(lista) {
+    return lista.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
+}
 
-
-
-
-
+const numeros3 = [1, 2, 3, 4, 5];
+console.log(somaLista(numeros3));
 
 
 // 2: Crie uma função que recebe um array de strings e retorna um
 //novo array com as strings em ordem alfabética.
+function ordenarLista1(lista1) {
+    return lista1.slice().sort();
+}
+
+const palavras = ["marrom", "laranja", "azul", "amarelo", "gelo"];
+console.log(ordenarLista1(palavras)); 
 
 
 // 3: Crie uma função que recebe um array e retorna um novo array
- //sem elementos duplicados.
+ //sem elementos duplicado
+ 
