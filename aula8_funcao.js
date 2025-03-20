@@ -77,3 +77,13 @@ if (/^\d+$/.test(numero)) {
 
 // Chamada da função
 contarDigitos();
+
+// Exemplo a seguir para definir uma função
+// Parâmetro - Argumento - Retorno
+// Exemplo
+function fazerPizza(tipoDoQueijo,tipoDoRecheio) {
+    const pizza = `Pizza de ${tipoDoQueijo} com ${tipoDoRecheio}`;
+    return pizza;
+}
+const pizzaDoCliente = fazerPizza('Brie'. 'Damasco');
+console.log(pizzaDoCliente);
