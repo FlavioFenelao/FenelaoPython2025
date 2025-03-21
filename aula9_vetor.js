@@ -81,4 +81,8 @@ console.log(ordenarLista1(palavras));
 
 // 3: Crie uma função que recebe um array e retorna um novo array
  //sem elementos duplicado
- 
+ function listaDuplicada(elementosDuplicados) {
+    return [...new Set(elementosDuplicados)];
+ }
+ const elementos = ['laranja', 'laranja', 'azul','azul'];
+ console.log(listaDuplicada (elementos));
