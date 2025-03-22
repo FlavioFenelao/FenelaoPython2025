@@ -68,6 +68,9 @@ function somaLista(lista) {
 const numeros3 = [1, 2, 3, 4, 5];
 console.log(somaLista(numeros3));
 
+// acc = inicio
+// curr = próximo
+
 
 // 2: Crie uma função que recebe um array de strings e retorna um
 //novo array com as strings em ordem alfabética.
