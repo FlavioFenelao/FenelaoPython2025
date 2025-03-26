@@ -130,7 +130,41 @@ console.log(buscarNaMatriz(matriz3, numero2));
 
 
 //6.Matriz Identidade: Crie uma função que gere uma matriz identidade de tamanho NxN (uma matriz onde os elementos da diagonal principal são 1 e os demais são 0).
+function buscarNumero(matriz, numero) {
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            if (matriz[i][j] === numero) {
+                return { linha: i, coluna: j };
+            }
+        }
+    }
+    return null;
+}
 
+let matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+console.log(buscarNumero(matriz, 5));  // Retorna { linha: 1, coluna: 1 }
+console.log(buscarNumero(matriz, 10)); // Retorna null
+
+//6.Matriz Identidade: Crie uma função que gere uma matriz identidade de tamanho NxN (uma matriz onde os elementos da diagonal principal são 1 e os demais são 0).
+
+function gerarMatrizIdentidade(n) {
+    let matriz = [];
+    for (let i = 0; i < n; i++) {
+        let linha = [];
+        for (let j = 0; j < n; j++) {
+            linha.push(i === j ? 1 : 0);
+        }
+        matriz.push(linha);
+    }
+    return matriz;
+}
+
+console.log(gerarMatrizIdentidade(3));
 //7.Rotação de Matriz: Escreva uma função que rotacione uma matriz 3x3 em 90 graus no sentido horário.
 
 //8.Soma das Bordas: Escreva uma função que calcule a soma dos elementos das bordas de uma matriz NxN.
