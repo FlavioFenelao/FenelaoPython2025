@@ -47,18 +47,6 @@ class Aluno { // A classe Aluno é criada para representar cada aluno dentro do 
 }
 
 
-    gerarBoletim() { // O método gerarBoletim pertence à classe Disciplina e tem a função de gerar um boletim que lista os alunos matriculados na disciplina, juntamente com suas médias
-        if (this.alunosMatriculados.length === 0) { // Esta linha verifica se a propriedade alunosMatriculados, que é um array contendo os alunos matriculados na disciplina. Se o comprimento do array for 0, significa que não há alunos matriculados
-            console.log(`Nenhum aluno matriculado na disciplina ${this.nomeDisciplina}.`);
-            return; // Return encerra a execução do método
-        }
-
-        console.log(`📜 Boletim da disciplina: ${this.nomeDisciplina}`); // Se houver alunos matriculados, a Mensagem é impressa
-        this.alunosMatriculados.forEach((aluno, index) => { // A função forEach é usada para iterar sobre cada aluno no array alunosMatriculados. Para cada iteração, o aluno atual e seu index (posição no array) são passados para a função de callback
-            console.log(`${index + 1}. ${aluno.nomeAluno} - Média: ${aluno.calcularMedia().toFixed(2)}`); // Dentro do loop, uma linha é impressa no console para cada aluno, mostrando sua posição na lista (com index + 1 para que a contagem comece em 1), o nome do aluno e sua média. A média é calculada pelo método calcularMedia() do objeto aluno e formatada com duas casas decimais usando toFixed(2)
-        });
-    }
-}
 
 
   
