@@ -1,4 +1,4 @@
-import entradaDados from 'readline-sync';
+const entradaDados from 'readline-sync';
 
 // Classe Aluno
 class Aluno { // A classe Aluno é criada para representar cada aluno dentro do sistema
